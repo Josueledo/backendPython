@@ -3,10 +3,10 @@ import re
 import os
 
 # Caminho do arquivo de log
-log_file_path = r"C:\Users\luiza\Documents\tccserver\logs\application.log"
+log_file_path = r"C:\Users\Josue Ledo\Desktop\crud-tcc\logs/application.log"
 
 # Regex corrigida para permitir mais flexibilidade
-pattern = re.compile(r".*Requisicao recebida: IP=(?P<ip>[0-9a-fA-F:\.]+) Método=(?P<method>\S+) URI=(?P<uri>\S+) Query=(?P<query>.*?) User-Agent=(?P<agent>.+)")
+pattern = re.compile(r".*Requisicao recebida: IP=(?P<ip>[0-9a-fA-F:\.]+) Metodo=(?P<method>\S+) URI=(?P<uri>\S+) Query=(?P<query>.*?) User-Agent=(?P<agent>.+)")
 
 # Função para processar os logs
 def process_log_line(log_line):
